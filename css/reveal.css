@@ -1614,3 +1614,96 @@ ul.techs {
 @media (max-width: 600px) {
   .techs {
     margin-left: calc(50% - 300px); } }
+
+#ionic-apps div.status {
+  width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background: #ffffff; }
+  #ionic-apps div.status h2 {
+    font-weight: 600;
+    font-size: 90px;
+    letter-spacing: -3px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #529eff;
+    text-shadow: none; }
+  #ionic-apps div.status h3 {
+    margin-top: -3px;
+    font-size: 23px;
+    color: #272a2f;
+    font-weight: 700;
+    letter-spacing: 5px; }
+  #ionic-apps div.status ul {
+    margin-top: 30px;
+    margin-left: 0; }
+    #ionic-apps div.status ul li {
+      list-style: none;
+      color: #529eff;
+      font-weight: 700;
+      text-align: left;
+      position: relative;
+      letter-spacing: .15em;
+      padding: 12px 0 16px 37px;
+      font-size: 15px;
+      text-transform: uppercase; }
+    #ionic-apps div.status ul li:before {
+      background: url(../img/icons-sm.png) no-repeat 0 0;
+      background-size: 24px;
+      height: 24px;
+      width: 24px;
+      content: '';
+      display: block;
+      position: absolute;
+      left: -4px;
+      top: 10px; }
+  #ionic-apps div.status li.devs:before {
+    background-position: 0 -120px; }
+  #ionic-apps div.status li.meetups::before {
+    background-position: 0 -144px; }
+  #ionic-apps div.status li.github::before {
+    background-position: 0 -168px; }
+  #ionic-apps div.status li.so::before {
+    background-position: 0 -192px; }
+
+#ionic-apps ul.features {
+  width: 620px;
+  margin: 80px auto 0;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*li::before {
+      background: url(../img/icons-md.png) no-repeat 0 0;
+      background-size: 80px;
+      height: 80px;
+      width: 80px;
+      content: '';
+      display: block;
+      left: -11px;
+      top: -11px;
+    }*/ }
+  #ionic-apps ul.features li {
+    width: 80px;
+    height: 80px;
+    list-style: none; }
+    #ionic-apps ul.features li a {
+      background: url(../img/icons-md.png) no-repeat 0 0;
+      background-size: 80px;
+      height: 80px;
+      width: 80px;
+      display: block; }
+    #ionic-apps ul.features li a.github {
+      background-position: 0 0; }
+    #ionic-apps ul.features li a.slack {
+      background-position: 0 -160px; }
+    #ionic-apps ul.features li a.forum {
+      background-position: 0 -240px; }
+    #ionic-apps ul.features li a.so {
+      background-position: 0 -80px; }
+  #ionic-apps ul.features li.slack::before {
+    background-position: 0 -160px; }

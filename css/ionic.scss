@@ -232,3 +232,131 @@ ul.techs {
   }
 }
 
+#ionic-apps {
+  div.status {
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #ffffff;
+
+    h2 {
+      font-weight: 600;
+      font-size: 90px;
+      letter-spacing: -3px;
+      margin-bottom: 0;
+      margin-top: 0;
+      color: #529eff;
+      text-shadow: none;
+    }
+
+    h3 {
+      margin-top: -3px;
+      font-size: 23px;
+      color: #272a2f;
+      font-weight: 700;
+      letter-spacing: 5px;
+    }
+
+    ul {
+      margin-top: 30px;
+      margin-left: 0;
+
+      li {
+        list-style: none;
+        color: #529eff;
+        font-weight: 700;
+        text-align: left;
+        position: relative;
+        letter-spacing: .15em;
+        padding: 12px 0 16px 37px;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      li:before {
+        background: url(../img/icons-sm.png) no-repeat 0 0;
+        background-size: 24px;
+        height: 24px;
+        width: 24px;
+        content: '';
+        display: block;
+        position: absolute;
+        left: -4px;
+        top: 10px;
+      }
+    }
+
+    li.devs:before {
+      background-position: 0 -120px;
+    }
+
+    li.meetups::before {
+      background-position: 0 -144px;
+    }
+
+    li.github::before {
+      background-position: 0 -168px;
+    }
+
+    li.so::before {
+      background-position: 0 -192px;
+    }
+  }
+
+  ul.features {
+    width: 620px;
+    margin: 80px auto 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      width: 80px;
+      height: 80px;
+      list-style: none;
+
+      a {
+        background: url(../img/icons-md.png) no-repeat 0 0;
+        background-size: 80px;
+        height: 80px;
+        width: 80px;
+        display: block;
+      }
+
+      a.github {
+        background-position: 0 0;
+      }
+
+      a.slack {
+        background-position: 0 -160px;
+      }
+
+      a.forum {
+        background-position: 0 -240px;
+      }
+
+      a.so {
+        background-position: 0 -80px;
+      }
+    }
+
+    li.slack::before {
+      background-position: 0 -160px;
+    }
+
+    /*li::before {
+      background: url(../img/icons-md.png) no-repeat 0 0;
+      background-size: 80px;
+      height: 80px;
+      width: 80px;
+      content: '';
+      display: block;
+      left: -11px;
+      top: -11px;
+    }*/
+
+  }
+
+}
