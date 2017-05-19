@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Ionic + Angular: Superpowers for Mobile App Development</title>
 
-    <meta name="description" content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
+    <meta name="description"
+          content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
     <meta name="author" content="https://twitter.com/adamdbradley">
     <meta name="author" content="https://twitter.com/benjsperry">
     <meta name="author" content="https://twitter.com/perrygovier">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="css/reveal.css">
 
@@ -24,169 +26,173 @@
 
     <!-- Printing and PDF exports -->
     <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="reveal">
+<div class="reveal">
 
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
 
         <section>
-          <img src="img/ionic-logo-white.png" class="logo" width="500">
-          <h4>Desenvolvendo apps híbridos com Angular e Ionic Framework</h4>
+            <img src="img/ionic-logo-white.png" class="logo" width="500">
+            <h4>Desenvolvendo apps híbridos com Angular e Ionic Framework</h4>
         </section>
 
         <section>
-          <img src="img/me.jpg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
-          <ul style="position: absolute; top:0; left:300px;">
-            <li>Ricardo Mello</li>
-            <li>Ionic Framework Developer</li>
-            <li>Rio de Janeiro, RJ, BR <br> Cidade Maravilhosa<br><br></li>
-            <li><a href="https://github.com/ricardo-mello">github.com/ricardo-mello</a></li>
-          </ul>
+            <img src="img/me.jpg"
+                 style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
+            <ul style="position: absolute; top:0; left:300px;">
+                <li>Ricardo Mello</li>
+                <li>Ex-Javeiro</li>
+                <li>Ionic Framework Developer/Contributor</li>
+                <li>Entusiasta Open Source</li>
+                <li>Rio de Janeiro, RJ, BR <br></li>
+                <li><a href="https://github.com/ricardo-mello">github.com/ricardo-mello</a></li>
+            </ul>
         </section>
 
         <section>
-          <h2>Overview</h2>
-          <ol>
-            <li>Apps Híbridos vs Nativos</li>
-            <li><strike>Java vs .Net</strike></li>
-            <li>Introdução ao Ionic</li>
-            <li>UI Components</li>
-            <li>Ionic CLI</li>
-            <li>Demos</li>
-          </ol>
-        </section>
-
-
-        <section>
-          <blockquote>
-            &ldquo;Eu quero desenvolver um app!&rdquo;
-          </blockquote>
+            <h2>Overview</h2>
+            <ol>
+                <li>Apps Híbridos vs Nativos</li>
+                <li><strike>Java vs .Net</strike></li>
+                <li>Introdução ao Ionic</li>
+                <li>UI Components</li>
+                <li>Ionic CLI</li>
+                <li>Demos</li>
+            </ol>
         </section>
 
 
         <section>
-          <h3>Mais Plataformas. Mais Problemas.</h3>
-          <ul>
-            <li>Conhecimento em cada plataforma</li>
-            <li>Códigos totalmente separados</li>
-            <li>Desenvolvimento caro e demorado</li>
-          </ul>
-          <p style="margin-top: 60px">
-            <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
-            <img src="img/android.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
-            <img src="img/windows.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
-            <img src="img/blackberry.png" class="logo" width="200" height="200" style="margin-left: 10px;">
-          </p>
+            <blockquote>
+                &ldquo;Eu quero desenvolver um app!&rdquo;
+            </blockquote>
         </section>
 
-       <section style="top: -91.5px; display: block;" class="present">
-          <blockquote>
-            "Tá, mas existe alguma alternativa?"
-          </blockquote>
+
+        <section>
+            <h3>Mais Plataformas. Mais Problemas.</h3>
+            <ul>
+                <li>Conhecimento em cada plataforma</li>
+                <li>Códigos totalmente separados</li>
+                <li>Desenvolvimento caro e demorado</li>
+            </ul>
+            <p style="margin-top: 60px">
+                <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
+                <img src="img/android.png" class="logo" width="200" height="200"
+                     style="margin-left: 10px; margin-right: 10px">
+                <img src="img/windows.png" class="logo" width="200" height="200"
+                     style="margin-left: 10px; margin-right: 10px">
+                <img src="img/blackberry.png" class="logo" width="200" height="200" style="margin-left: 10px;">
+            </p>
+        </section>
+
+        <section style="top: -91.5px; display: block;" class="present">
+            <blockquote>
+                "Tá, mas existe alguma alternativa?"
+            </blockquote>
         </section>
 
         <section>
-          <h3 style="font-size: 80px">Apps Híbridos!</h3>
-          <p style="font-size: 32px"><strong>HTML5</strong> "tipo" nativo</p>
-          <p style="font-size: 32px">Web encapsulado em uma <strong>camada nativa</strong></p>
-          <p style="font-size: 32px">Acesso direto a <strong>APIs nativas</strong></p>
-          <p style="font-size: 32px">Ambiente <strong>de desenvolvimento web</strong> familiar</p>
-          <p style="font-size: 32px">Um <strong>único código base</strong></p>
+            <h3 style="font-size: 80px">Apps Híbridos!</h3>
+            <p style="font-size: 32px"><strong>HTML5</strong> "tipo" nativo</p>
+            <p style="font-size: 32px">Web encapsulado em uma <strong>camada nativa</strong></p>
+            <p style="font-size: 32px">Acesso direto a <strong>APIs nativas</strong></p>
+            <p style="font-size: 32px">Ambiente <strong>de desenvolvimento web</strong> familiar</p>
+            <p style="font-size: 32px">Um <strong>único código base</strong></p>
         </section>
 
 
         <section style="top: -140px; display: block;" class="present">
-          <blockquote>
-            "App Híbridos são lentos!"
-          </blockquote>
-          <blockquote class="fragment visible" data-fragment-index="0">
-            "Os tempos <span style="text-decoration: line-through;">estão mudando</span> mudaram"
-          </blockquote>
+            <blockquote>
+                "App Híbridos são lentos!"
+            </blockquote>
+            <blockquote class="fragment visible" data-fragment-index="0">
+                "Os tempos <span style="text-decoration: line-through;">estão mudando</span> mudaram"
+            </blockquote>
         </section>
 
 
         <section data-background="img/dylan.jpg">
-          <h3>Dispositivos móveis evoluindo muito rapido!</h3>
-          <table>
-            <tr>
-              <th>Ano</th>
-              <th>Dispositivo</th>
-              <th>Processador</th>
-              <th>RAM</th>
-            </tr>
-            <tr>
-              <td>2007</td>
-              <td>iPhone</td>
-              <td>400 MHz</td>
-              <td>128 MB</td>
-            </tr>
-            <tr>
-              <td>2010</td>
-              <td>iPhone 4</td>
-              <td>1 GHz</td>
-              <td>512 MB</td>
-            </tr>
-            <tr>
-              <td>2015</td>
-              <td>iPhone 6</td>
-              <td>1.4 GHz dual-core</td>
-              <td>1 GB</td>
-            </tr>
-          </table>
+            <h3>Dispositivos móveis evoluindo muito rapido!</h3>
+            <table>
+                <tr>
+                    <th>Ano</th>
+                    <th>Dispositivo</th>
+                    <th>Processador</th>
+                    <th>RAM</th>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>iPhone</td>
+                    <td>400 MHz</td>
+                    <td>128 MB</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>iPhone 4</td>
+                    <td>1 GHz</td>
+                    <td>512 MB</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>iPhone 6</td>
+                    <td>1.4 GHz dual-core</td>
+                    <td>1 GB</td>
+                </tr>
+            </table>
         </section>
 
 
         <section>
-          <h4 style="font-size:50px; margin:0;">As Web-standards</h4>
-          <h4 style="font-size:80px;">Evoluíram!</h4>
-          <p><a href="http://caniuse.com/">caniuse.com</a> está muito bom nos dias de hoje</p>
-          <p>Android agora é <strong>baseado no Chromium</strong></p>
-          <p>Os usuários do iOS mantêm seus dispositivos <strong>atualizados</strong></p>
+            <h4 style="font-size:50px; margin:0;">As Web-standards</h4>
+            <h4 style="font-size:80px;">Evoluíram!</h4>
+            <p><a href="http://caniuse.com/">caniuse.com</a> está muito bom nos dias de hoje</p>
+            <p>Android agora é <strong>baseado no Chromium</strong></p>
+            <p>Os usuários do iOS mantêm seus dispositivos <strong>atualizados</strong></p>
 
-          <p style="text-align:center;">
-            <img src="img/caniuse-querySelector.png" width=460 class="logo">
-            <img src="img/caniuse-flexbox.png" width=460 class="logo">
-          </p>
+            <p style="text-align:center;">
+                <img src="img/caniuse-querySelector.png" width=460 class="logo">
+                <img src="img/caniuse-flexbox.png" width=460 class="logo">
+            </p>
         </section>
 
 
         <section data-background="white">
-          <img src="img/ios10-adoption.png">
-          <p style="font-size:10px">https://mixpanel.com/trends/#report/ios_10/from_date:-224,report_unit:week,to_date:0</p>
+            <img src="img/ios10-adoption.png">
+            <p style="font-size:10px">
+                https://mixpanel.com/trends/#report/ios_10/from_date:-224,report_unit:week,to_date:0</p>
         </section>
 
 
         <section data-background="white">
-          <img src="img/android-os-adoption.png">
-          <p style="font-size:10px">https://mixpanel.com/trends/#report/android_os_adoption/from_date:-224,report_unit:week,to_date:0</p>
+            <img src="img/android-os-adoption.png">
+            <p style="font-size:10px">
+                https://mixpanel.com/trends/#report/android_os_adoption/from_date:-224,report_unit:week,to_date:0</p>
         </section>
 
 
         <section>
-          <h3 style="margin:0">SDKs Nativos...</h3>
-          <h2 style="font-size:2.2em;">São Ótimos!</h2>
-          <p style="margin:30px auto 20px auto; width: 600px">
-            Common UI, APIs, views, navegação, histórico em pilha, transições, interações, gestos, etc.
-          </p>
+            <h3 style="margin:0">SDKs Nativos...</h3>
+            <h2 style="font-size:2.2em;">São Ótimos!</h2>
+            <p style="margin:30px auto 20px auto; width: 600px">
+                Common UI, APIs, views, navegação, histórico em pilha, transições, interações, gestos, etc.
+            </p>
             <img src="img/native-sdk.png" style="width:66%">
         </section>
-
-
-
 
 
         <section data-background="img/websdk.png" style="width:100%">
@@ -194,52 +200,53 @@
 
 
         <section data-background="white">
-          <img src="img/ionic-logo.png" style="width:500px;">
+            <img src="img/ionic-logo.png" style="width:500px;">
         </section>
 
 
         <section>
-          <h3 style="margin:0; font-size:32px">Web Technologies You Already</h3>
-          <h2 style="font-size: 85px;">Know &amp; Love</h2>
-          <div style="margin-top: 30px">
-            <img src="img/html.png" class="logo" width="185" height="260">
-            <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
-            <img src="img/js.png" class="logo" width="185" height="260">
-          </div>
-          <p style="margin-top: 30px; opacity: 0.6">
-            (You'll feel right at home)
-          </p>
+            <h3 style="margin:0; font-size:32px">Tecnologias Web que você</h3>
+            <h2 style="font-size: 85px;">Já Conhece</h2>
+            <ul class="techs">
+                <li class="angular"></li>
+                <li class="js"></li>
+                <li class="ts"></li>
+                <li class="html"></li>
+            </ul>
+            <p style="margin-top: 30px; opacity: 0.6">
+                Você vai se sentir em casa
+            </p>
         </section>
 
 
         <section data-background="img/angular-bg.png">
-          <h3 style="font-size:42px; margin:0">Superpowered by</h3>
-          <h2 style="font-size:90px;">Angular</h2>
-          <p style="margin-top:60px;"><strong>Extends the HTML</strong> vocabulary</p>
-          <p>Proven for <strong>large-scale</strong> app development</p>
-          <p>UI Components using <strong>Directives &amp; Services</strong></p>
-          </ul>
+            <h3 style="font-size:42px; margin:0">Superpoderes graças ao</h3>
+            <h2 style="font-size:90px;">Angular</h2>
+            <p style="margin-top:60px;"><strong>Estende</strong> o vocabulário HTML</p>
+            <p>Aprovado para desenvolvimento de apps <strong>em larga escala</strong></p>
+            <p>Componentes de interface <strong>reutilizáveis</strong></p>
+            </ul>
         </section>
 
 
         <section data-background="img/sass.png">
-          <h2 style="font-size:3em; text-transform: none;">Sass!</h2>
-          <p>CSS generated from the <strong>Sass preprocessor</strong></p>
-          <p>Quickly give your app its own <strong>look and feel</strong></p>
-          <p>CSS designed to be <strong>easily overridden</strong></p>
-          <p><strong>Variables based</strong> with default settings</p>
+            <h2 style="font-size:3em; text-transform: none;">Sass!</h2>
+            <p>CSS gerado a partir do <strong>pré-processador Sass</strong></p>
+            <p>Você consegue rapidamente <strong>dar a sua cara ao app</strong></p>
+            <p>CSS desenhado para ser <strong>facilmente alterado</strong></p>
+            <p><strong>Baseado em variáveis</strong> com configurações padrão</p>
         </section>
 
 
         <section data-background="img/phones-stacked.png">
-          <h2 style="color:black; margin-bottom: 50px">How it all comes together</h2>
-          <ul class="stack">
-            <li style="background: #20ab93">Your App</li>
-            <li style="background: #4c8df5">Ionic</li>
-            <li style="background: #d94442">Angular</li>
-            <li style="background: #3b4854">WebView (Cordova)</li>
-            <li style="background: #d4deee; color: #3b4854;">Native App</li>
-          </ul>
+            <h2 style="color:black; margin-bottom: 50px">Como isso tudo se encaixa</h2>
+            <ul class="stack">
+                <li style="background: #20ab93">Seu App</li>
+                <li style="background: #4c8df5">Ionic</li>
+                <li style="background: #d94442">Angular</li>
+                <li style="background: #3b4854">WebView (Cordova)</li>
+                <li style="background: #d4deee; color: #3b4854;">App Nativo</li>
+            </ul>
         </section>
 
 
@@ -247,19 +254,19 @@
         </section>
 
 
-        <section>
-          <div class="col preview demo-frame">
-            <iframe isrc="demos/list/index.html"></iframe>
-          </div>
-          <div class="col code">
-            <h2>Complex Lists</h2>
-            <ul style="margin-left: 70px">
-              <li>AngularJS Directive</li>
-              <li>Buttons exposed by swiping</li>
-              <li>Reorder</li>
-              <li>Delete</li>
-            </ul>
-            <pre><code data-trim contenteditable class="xml">
+        <!--<section>
+            <div class="col preview demo-frame">
+                <iframe isrc="demos/list/index.html"></iframe>
+            </div>
+            <div class="col code">
+                <h2>Listas Complexas</h2>
+                <ul style="margin-left: 70px">
+                    <li>Angular Component</li>
+                    <li>Swipe Buttons</li>
+                    <li>Reordenar Itens</li>
+                    <li>Remover Itens</li>
+                </ul>
+                <pre><code data-trim contenteditable class="xml">
 <ion-list>
 
   <ion-item ng-repeat="item in items" item="item">
@@ -267,48 +274,48 @@
   </ion-item>
 
 </ion-list></code></pre>
-          </div>
+            </div>
         </section>
 
 
         <section>
-          <div class="col preview demo-frame">
-            <iframe isrc="demos/collection-repeat/index.html"></iframe>
-          </div>
-          <div class="col code">
-            <h3>Collection Repeat</h3>
-            <ul style="margin-left: 70px">
-              <li>Replacement for Angular's ng-repeat</li>
-              <li>Inspired by iOS’s UICollectionView</li>
-              <li>Scroll through thousands of items</li>
-              <li>Only renders the viewable items</li>
-              <li>Smooth scrolling!</li>
-            </ul>
-            <pre><code data-trim contenteditable class="xml">
+            <div class="col preview demo-frame">
+                <iframe isrc="demos/collection-repeat/index.html"></iframe>
+            </div>
+            <div class="col code">
+                <h3>Collection Repeat</h3>
+                <ul style="margin-left: 70px">
+                    <li>Replacement for Angular's ng-repeat</li>
+                    <li>Inspired by iOS’s UICollectionView</li>
+                    <li>Scroll through thousands of items</li>
+                    <li>Only renders the viewable items</li>
+                    <li>Smooth scrolling!</li>
+                </ul>
+                <pre><code data-trim contenteditable class="xml">
 <div class="list">
   <div collection-repeat="c in contacts">
     <h2>{{ c.name }}</h2>
     <p>{{ c.email }}</p>
   </div>
 </div></code></pre>
-          </div>
+            </div>
         </section>
 
 
         <section>
-          <div class="col preview demo-frame">
-            <iframe isrc="demos/tabs/index.html"></iframe>
-          </div>
-          <div class="col code">
-            <h3>Navigation</h3>
-            <ul style="margin-left: 70px">
-              <li>Uses AngularUI Router</li>
-              <li>Shows back button when possible</li>
-              <li>Transitions follow direction of nav</li>
-              <li>Updates the app's URL</li>
-              <li>Multi-history stack</li>
-            </ul>
-            <pre><code data-trim contenteditable class="xml">
+            <div class="col preview demo-frame">
+                <iframe isrc="demos/tabs/index.html"></iframe>
+            </div>
+            <div class="col code">
+                <h3>Navigation</h3>
+                <ul style="margin-left: 70px">
+                    <li>Uses AngularUI Router</li>
+                    <li>Shows back button when possible</li>
+                    <li>Transitions follow direction of nav</li>
+                    <li>Updates the app's URL</li>
+                    <li>Multi-history stack</li>
+                </ul>
+                <pre><code data-trim contenteditable class="xml">
 <ion-tabs>
 
   <ion-tab title="Home" icon="ion-ios-home">
@@ -324,86 +331,78 @@
   </ion-tab>
 
 </ion-tabs></code></pre>
-          </div>
+            </div>
         </section>
 
 
         <section>
-          <div class="col preview demo-frame">
-            <iframe isrc="demos/swipe-back/index.html"></iframe>
-          </div>
-          <div class="col code">
-            <h3>Swipe To Go Back</h3>
-            <ul style="margin-left: 70px">
-              <li>Swipe back to previous view</li>
-              <li>Interactive transition</li>
-              <li>Benefit of cached views</li>
-              <li>Still updates the app's URL</li>
-              <li>WebView (Cordova) only</li>
-            </ul>
-          </div>
+            <div class="col preview demo-frame">
+                <iframe isrc="demos/swipe-back/index.html"></iframe>
+            </div>
+            <div class="col code">
+                <h3>Swipe To Go Back</h3>
+                <ul style="margin-left: 70px">
+                    <li>Swipe back to previous view</li>
+                    <li>Interactive transition</li>
+                    <li>Benefit of cached views</li>
+                    <li>Still updates the app's URL</li>
+                    <li>WebView (Cordova) only</li>
+                </ul>
+            </div>
         </section>
 
 
         <section>
-          <div class="col preview demo-frame">
-            <iframe isrc="demos/components/index.html"></iframe>
-          </div>
-          <div class="col code">
-            <h3>Other Components</h3>
-            <ul style="margin-left: 70px">
-              <li>Side Menus</li>
-              <li>Actionsheet</li>
-              <li>Modal</li>
-              <li>Pull To Refresh</li>
-              <li>Spinners</li>
-              <li>Slidebox</li>
-              <li>Infinite Scroll</li>
-              <li>Swipeable List Options</li>
-              <li>Popup</li>
-              <li>Popover</li>
-              <li>Loading Overlay</li>
-              <li>Inputs</li>
-              <li>Buttons</li>
-              <li>etc.</li>
-            </ul>
-          </div>
-        </section>
+            <div class="col preview demo-frame">
+                <iframe isrc="demos/components/index.html"></iframe>
+            </div>
+            <div class="col code">
+                <h3>Other Components</h3>
+                <ul style="margin-left: 70px">
+                    <li>Side Menus</li>
+                    <li>Actionsheet</li>
+                    <li>Modal</li>
+                    <li>Pull To Refresh</li>
+                    <li>Spinners</li>
+                    <li>Slidebox</li>
+                    <li>Infinite Scroll</li>
+                    <li>Swipeable List Options</li>
+                    <li>Popup</li>
+                    <li>Popover</li>
+                    <li>Loading Overlay</li>
+                    <li>Inputs</li>
+                    <li>Buttons</li>
+                    <li>etc.</li>
+                </ul>
+            </div>
+        </section>-->
 
 
         <section>
-          <h2><strong>MIT LICENSED</strong></h2>
-          <h6 class="light-text">Free to use (even commercially)</h6>
+            <h2><strong>Open Source & MIT</strong></h2>
+            <h6 class="light-text">Potencializado por uma comunidade gigante ao redor do mundo</h6>
         </section>
-
 
         <section>
-          <h2>Ionicons</h2>
-          <img src="img/ionicons.png" class="logo" width="655" height="436">
-          <p>700+ MIT licensed font-icons included</p>
-          <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
+            <h2>Ionicons</h2>
+            <img src="img/ionicons.png" class="logo" width="655" height="436">
+            <p>+700 ícones com licença MIT</p>
+            <p><a href="https://ionicframework.com/docs/ionicons/" target="_blank">ionicframework.com/docs/ionicons</a></p>
         </section>
-
 
 
         <section data-background="white">
-          <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
-          <img src="img/cli.png" height="220" style="border: 0">
-          <p class="ionic-blue">Boilerplate <strong>app structure</strong> ready for customization</p>
-          <p class="ionic-blue"><strong>LiveReload</strong> both local and native builds</p>
-          <p class="ionic-blue">Build and run <strong>native apps</strong></p>
+            <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
+            <img src="img/cli.png" height="220" style="border: 0">
+            <p class="ionic-blue"><strong>Boilerplate</strong> pronto para customização</p>
+            <p class="ionic-blue"><strong>LiveReload</strong> para buils locais e nativas</p>
+            <p class="ionic-blue">Crie e rode <strong>apps nativos</strong></p>
         </section>
 
-        <section data-background="img/chromium.jpg">
-          <h3 style="margin:0; font-size:60px;">Modern</h3>
-          <h2 style=" font-size:80px;">Chromium!</h2>
-          <p>Chromium for Android <strong>WebViews</strong></p>
-          <p><strong>Upgrade Android</strong> 4.1+ and above</p>
-          <p>Same hardware, <strong>modern software</strong></p>
-          <p><strong>Amazing performance</strong> improvements</p>
+        <section data-background="img/ionic-native.png">
         </section>
 
-        <section data-background="img/ng-cordova.png">
+        <section data-background="img/ionic-visual-studio.png">
         </section>
 
 
@@ -432,74 +431,74 @@
 
 
         <section>
-          <h2>Get Started with Ionic!</h2>
-          <br />
-          <p>
-            <strong>Getting started guide</strong>
-            <br />
-            <a href="hhttp://ionicframework.com/getting-started/" target="_blank">
-              <span class="light-text">ionicframework.com/getting-started</span>
-            </a>
-          </p>
-          <br />
-          <p>
-            <strong>Documentation</strong>
-            <br />
-            <a href="http://ionicframework.com/docs/" target="_blank">
-              <span class="light-text">ionicframework.com/docs</span>
-            </a>
-          </p>
-          <br />
-          <p>
-            <strong>Visit the Community Forum</strong>
-            <br />
-            <a href="http://forum.ionicframework.com/" target="_blank">
-              <span class="light-text">forum.ionicframework.com</span>
-            </a>
-          </p>
-          <br />
-          <p>
-            <strong>Contribute on GitHub</strong>
-            <br />
-            <a href="https://github.com/driftyco/ionic" target="_blank">
-              <span class="light-text">github.com/driftyco/ionic</span>
-            </a>
-          </p>
+            <h2>Comece agora!</h2>
+            <br/>
+            <p>
+                <strong>Guia de início rápido</strong>
+                <br/>
+                <a href="http://ionicframework.com/getting-started/" target="_blank">
+                    <span class="light-text">ionicframework.com/getting-started</span>
+                </a>
+            </p>
+            <br/>
+            <p>
+                <strong>Documentation</strong>
+                <br/>
+                <a href="http://ionicframework.com/docs/" target="_blank">
+                    <span class="light-text">ionicframework.com/docs</span>
+                </a>
+            </p>
+            <br/>
+            <p>
+                <strong>Visit the Community Forum</strong>
+                <br/>
+                <a href="http://forum.ionicframework.com/" target="_blank">
+                    <span class="light-text">forum.ionicframework.com</span>
+                </a>
+            </p>
+            <br/>
+            <p>
+                <strong>Contribute on GitHub</strong>
+                <br/>
+                <a href="https://github.com/driftyco/ionic" target="_blank">
+                    <span class="light-text">github.com/driftyco/ionic</span>
+                </a>
+            </p>
         </section>
 
 
         <section data-background="#232323">
-          <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo Time!</strong></h2>
-          <h6 style="color:#32b83b;font-family:Monaco;">May the demo gods be with us</h6>
+            <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo Time!</strong></h2>
+            <h6 style="color:#32b83b;font-family:Monaco;">Que os deuses da demonstração estejam conosco</h6>
         </section>
 
 
         <section>
-          <h2><code style="font-size:60px">&lt;/html&gt;</code></h2>
-          <h3>
-            <a href="https://twitter.com/ionicframework" target="_blank">
-              @ionicframework
-            </a>
-          </h3>
-          <h4>
-            <a href="http://ionicframework.github.io/ionic-present/#/">
-              http://ionicframework.github.io/ionic-present
-            </a>
-          </h4>
+            <h2><code style="font-size:60px">&lt;/html&gt;</code></h2>
+            <h3>
+                <a href="https://github.com/ricardo-mello" target="_blank">
+                    @ricardo-mello
+                </a>
+            </h3>
+            <h4>
+                <a href="http://ricardo-mello.github.io/ionic-present/#/">
+                    http://ricardo-mello.github.io/ionic-present
+                </a>
+            </h4>
         </section>
-
-      </div>
 
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+</div>
 
-    <script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
@@ -509,32 +508,50 @@
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
         ]
-      });
+    });
 
-      Reveal.addEventListener( 'slidechanged', function( event ) {
+    Reveal.addEventListener('slidechanged', function (event) {
         // load iframes on page enter to speed up initial load time
         console.log(event)
         var iframe = event.currentSlide.querySelector('iframe')
-        if(iframe){
-          iframe.setAttribute('src',iframe.getAttribute('isrc'));
+        if (iframe) {
+            iframe.setAttribute('src', iframe.getAttribute('isrc'));
         }
 
         var prevIframe = event.previousSlide.querySelector('iframe');
-        if(prevIframe){
-          prevIframe.setAttribute('src','');
+        if (prevIframe) {
+            prevIframe.setAttribute('src', '');
         }
 
-    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-} );
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    });
 
-    </script>
+</script>
 
-  </body>
+</body>
 </html>

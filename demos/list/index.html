@@ -12,10 +12,10 @@
 
       <button class="button button-icon icon ion-ios-minus-outline"
         ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
-    <h1 class="title">Lists</h1>
+    <h1 class="title">Itens</h1>
     <button class="button"
         ng-click="data.showDelete = false; data.showReorder = !data.showReorder">
-          Reorder
+          Reordenar
         </button>
 
   </ion-header-bar>
@@ -27,7 +27,7 @@
       <ion-item ng-repeat="item in items"
                 item="item"
                 href="#/item/{{item.id}}">
-        List Item {{ item.id }}
+        Meu item {{ item.id }}
         <ion-delete-button class="ion-minus-circled"
                            ng-click="onItemDelete(item)">
         </ion-delete-button>
